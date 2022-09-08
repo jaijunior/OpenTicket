@@ -1,0 +1,64 @@
+*{
+    margin:0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+
+header{
+    background-color: aquamarine;
+}
+header ul{
+    display: flex;
+    justify-content: space-around;
+}
+
+main{
+    padding-top: 70px;
+}
+
+.cartoesPrincipais {
+    display:flex;
+    justify-content: space-around;
+    font-size: 10px;
+    text-align: center;
+}
+
+.cartoesPrincipais div {
+    width: 190px;
+    height: 100px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.botaoTabela{
+    margin-top: 90px;
+    display:flex;
+    justify-content: space-around;
+    font-size: 10px;
+    text-align: center;
+}
+
+.botaoTabela table{
+    border: 1px solid black;
+}
+
+.botaoTabela span{
+    border: 1px solid black;
+    min-width: 190px;
+    min-height: 100px;
+    border-radius: 10px;
+    padding: 50px 95px 50px 95px;
+    font-size: 20px;
+}
+
+.botaoTabela span:hover{
+    border: 1px solid black;
+    min-width: 190px;
+    min-height: 100px;
+    border-radius: 10px;
+    padding: 53px 95px 53px 95px;
+    background-color: azure;
+    transition: 0.5s;
+
+}
