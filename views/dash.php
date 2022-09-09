@@ -1,3 +1,7 @@
+<?php
+    
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -33,18 +37,18 @@
                             <th>MENSAGEM</th>
                             <th>STATUS</th>
                             <th>TÉCNICO RESPONSAVEL</th>
+                            <th>INÍCIO</th>
+                            <th>FIM</th>
                             <th>AÇÕES</th>
                         </tr>
                     </thead>
                     <tbody>
-                        <tr>
-                            <td></td>
-                        </tr>
+                        <?php include 'views/clippings/dadosDaTabela.php'; ?>
                     </tbody>
                 </table>
             </div>
             <div>
-                <a href="/novochamado"><span>NOVO CHAMADO </span></a>
+                <a href="/novochamado"><span>NOVO CHAMADO</span></a>
             </div>
         </div>
     </main>

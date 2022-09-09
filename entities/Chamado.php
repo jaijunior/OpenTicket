@@ -8,11 +8,12 @@
         private $mensagem;
         private $tecnico;
 
-        public function __construct($setor, $solicitante, $mensagem)
+        public function __construct($setor, $solicitante, $mensagem, $tecnico)
         {
             $this->setor = $setor;
             $this->solicitante = $solicitante;
             $this->mensagem = $mensagem;
+            $this->tecnico = $tecnico;
 
         }
 
@@ -59,7 +60,7 @@
         public function __toString()
         {
             return $this->solicitante 
-                . "\n"
+                . " "
                 . $this->setor
                 . " " 
                 .$this->mensagem;

@@ -12,7 +12,12 @@
         case '/cadastro':
             include 'processing/processarnovochamado.php';
             break;
+        case '/abertos':
+            include 'views/chamadosabertos.php';
+            break;
+        case '/editar':
+            include 'views/editarchamado.php';
+            break;
         default:
-            echo "404";
-        
+            echo "404";       
     }
