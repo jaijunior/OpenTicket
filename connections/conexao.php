@@ -19,8 +19,18 @@
             return $resultado = $this->conexao->query($sql);
         }
 
+        function selectWhereId(string $tabela, string $id) {
+            $sql = "SELECT * FROM $tabela WHERE id='{$id}'";
+            return $resultado = $this->conexao->query($sql);
+        }
+
         function insert(Chamado $chamado){            
             $sql = "INSERT INTO chamados (solicitante, setor, mensagem, tecnico) VALUES ('{$chamado->getSolicitante()}','{$chamado->getSetor()}','{$chamado->getMensagem()}','{$chamado->getTecnico()}')";
+            return $resultado = $this->conexao->query($sql) or die($this->conexao->error);
+        }
+
+        function update(Chamado $chamado, $id){
+            $sql = "UPDATE chamados SET solicitante='{$chamado->getSolicitante()}', setor='{$chamado->getSetor()}',mensagem='{$chamado->getMensagem()}',tecnico='{$chamado->getTecnico()}', status='{$chamado->getStatus()}' WHERE id='{$id}'";
             return $resultado = $this->conexao->query($sql) or die($this->conexao->error);
         }
     }

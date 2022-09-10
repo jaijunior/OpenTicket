@@ -18,6 +18,9 @@
         case '/editar':
             include 'views/editarchamado.php';
             break;
+        case '/edicao':
+            include 'processing/processareditarchamado.php';
+            break;
         default:
             echo "404";       
     }

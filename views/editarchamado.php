@@ -10,18 +10,11 @@
 <body>
         <?php include 'views/clippings/header.php'; ?>
 
-        <pre>
+        
         
             <h1>Editar Chamado</h1>
-            <form action="/cadastro" method="post">
-                <label for="solicitante">Solicitante</label>
-                <input type="text" name="solicitante">
-
-                <label for="setor">Setor</label>
-                <input type="text" name="setor">
-
-                <label for="mensagem">Ocorrência:</label>
-                <textarea name="mensagem" id="" cols="30" rows="10"></textarea>
+                           
+                <?php include_once 'views/clippings/dadosDaEdicaoDoChamado.php'; ?>
 
                 <label for="tecnico" >Técnico</label>
                 <?php include_once 'views/clippings/dadosDoTecnico.php';?>
@@ -32,10 +25,10 @@
                     <option value="Em Andamento">Em Andamento</option>
                     <option value="Pausado">Pausado</option>
                     <option value="Finalizado">Finalizado</option>
-                </select>   
+                </select>   <br/>
 
                 <button type="submit">CADASTRAR CHAMADO</button>
             </form>
-        </pre>
+        
 </body>
 </html>
