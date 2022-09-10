@@ -3,65 +3,137 @@
     padding: 0px;
     box-sizing: border-box;
 }
-
+body{
+    max-width: 100%;
+    min-height: 100%;
+    margin: 0 auto;
+    border-right: 1px solid black; 
+    border-left: 1px solid black;    
+    font-family: Ubuntu;
+    background-color: rgb(44, 44, 44);
+    color: whitesmoke;
+}
 
 header{
-    background-color: aquamarine;
+    background-color: rgb(29, 29, 29);
+    height: 60px;
+    display: flex;
+    align-items: center;    
 }
+
+header a{
+    text-decoration: none;
+    color: rgb(199, 199, 199);
+}
+
+header a:hover{
+    text-decoration: none;
+    color: whitesmoke;
+}
+
 header ul{
     display: flex;
-    justify-content: space-around;
+    align-items: center;
+}
+
+header ul li{
+    list-style-type: none;
+    margin-left: 14px;
+}
+header ul li:hover{
+    
 }
 
 main{
-    padding-top: 70px;
+    height: 100%;
+    background-color: rgb(214, 214, 214);
 }
 
 .cartoesPrincipais {
     display:flex;
     justify-content: space-around;
+    align-items: center;
     font-size: 10px;
     text-align: center;
+    padding-top: 45px;
+    padding-bottom: 45px;
+    background-color: rgb(44, 44, 44);
 }
 
 .cartoesPrincipais div {
     width: 190px;
     height: 100px;
-    border: 1px solid black;
+    border: 2px solid whitesmoke;
     border-radius: 10px;
+}
+
+.aberto{
+    background-color: rgb(161, 161, 161);
+    color: black;
+}
+
+.andamento{
+    background-color: orange;
+    color: black;
+}
+
+.pausados{
+    background-color: rgb(248, 24, 24);
+    color: black;
+}
+
+.finalizados{
+    background-color: rgb(26, 165, 26);
+    color: black;
+
+}
+
+.quantidade{
+    margin-top: 20px;
+    font-size: 30px;
+
 }
 
 .botaoTabela{
-    margin-top: 90px;
+    padding-top: 45px;
+    padding-bottom: 45px;
     display:flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     font-size: 10px;
     text-align: center;
+    background-color: rgb(44, 44, 44);
 }
 
-.botaoTabela tablen, td, th{
-    border: 1px solid black;
+.botaoTabela div{
+    overflow-x: auto;
+}
+
+.botaoTabela table {
+    border-radius: 10px;
+    width: 90%;
+    background-color: aliceblue;
+    margin: 0 auto;
+    color: black;
+}
+
+.botaoTabela table, td, th{
+    
     font-size: 15px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    border-collapse: collapse;
+    border-collapse: collapse;    
 }
 
-.botaoTabela span{
-    border: 1px solid black;
-    min-width: 190px;
-    min-height: 100px;
-    border-radius: 10px;
-    padding: 50px 95px 50px 95px;
-    font-size: 20px;
+.botaoTabela thead{
+    background-color: rgb(126, 201, 245);
 }
 
-.botaoTabela span:hover{
-    border: 1px solid black;
-    min-width: 190px;
-    min-height: 100px;
-    border-radius: 10px;
-    padding: 53px 95px 53px 95px;
-    background-color: azure;
-    transition: 0.5s;
-
+.botaoTabela td{
+    text-align: center;
+    height: 15px;
 }
+
+.botaoTabela tbody tr:hover{
+    background-color: rgb(161, 145, 250);
+    transition: 0.3s;
+   
+}
+

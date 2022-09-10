@@ -21,7 +21,7 @@
                 <input type="text" name="setor" required>
 
                 <label for="mensagem">Ocorrência:</label>
-                <textarea name="mensagem" id="" cols="30" rows="5" required></textarea>
+                <textarea name="mensagem" id="" cols="30" rows="5" maxlength="60" required></textarea>
 
                 <label for="tecnico" >Técnico</label>
                 <?php include_once 'views/clippings/dadosDoTecnico.php';?>              

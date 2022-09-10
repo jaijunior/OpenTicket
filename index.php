@@ -21,6 +21,9 @@
         case '/edicao':
             include 'processing/processareditarchamado.php';
             break;
+        case '/teste';
+            include 'views/clippings/cartoesPrincipais.php';
+            break;
         default:
             echo "404";       
     }

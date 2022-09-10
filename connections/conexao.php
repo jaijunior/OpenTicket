@@ -24,6 +24,11 @@
             return $resultado = $this->conexao->query($sql);
         }
 
+        function selectPorStatus($tabela,$status){
+            $sql = "SELECT * FROM $tabela WHERE status='{$status}'";
+            return $resultado = $this->conexao->query($sql);
+        }
+
         function insert(Chamado $chamado){            
             $sql = "INSERT INTO chamados (solicitante, setor, mensagem, tecnico) VALUES ('{$chamado->getSolicitante()}','{$chamado->getSetor()}','{$chamado->getMensagem()}','{$chamado->getTecnico()}')";
             return $resultado = $this->conexao->query($sql) or die($this->conexao->error);

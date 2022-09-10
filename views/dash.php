@@ -14,18 +14,9 @@
 <body>
     <?php include 'views/clippings/header.php'; ?>
     <main>
-        <div class="cartoesPrincipais">
-            <div>
-                <h1>Chamados Abertos</h1>
-
-            </div>
-            <div>
-                <h1>Chamados em Andamento</h1>
-            </div>
-            <div>
-                <h1>Chamados Finalizados</h1>
-            </div>
-        </div>
+        <section class='primeirasessao'>
+            <?php include_once 'views/clippings/cartoesPrincipais.php'; ?>
+        </section>
         <div class="botaoTabela">
             <div>
                 <table>
@@ -34,7 +25,7 @@
                             <th>ID</th>
                             <th>SOLICITANTE</th>
                             <th>SETOR</th>
-                            <th>MENSAGEM</th>
+                            <th>ASSUNTO</th>
                             <th>STATUS</th>
                             <th>TÉCNICO RESPONSAVEL</th>
                             <th>INÍCIO</th>
@@ -46,9 +37,6 @@
                         <?php include 'views/clippings/dadosDaTabela.php'; ?>
                     </tbody>
                 </table>
-            </div>
-            <div>
-                <a href="/novochamado"><span>NOVO CHAMADO</span></a>
             </div>
         </div>
     </main>
